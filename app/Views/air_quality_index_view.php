@@ -75,7 +75,7 @@
 	<!-- Jquery dan Bootsrap JS -->
 	<script src="<?= base_url('js/jquery.min.js') ?>"></script>
 	<script src="<?= base_url('js/bootstrap.min.js') ?>"></script>
-    <script src="<?= base_url('js/currency_converter_script.js') ?>"></script>
+    <script src="<?= base_url('js/air_quality_index_script.js') ?>"></script>
 
 </body>
 
