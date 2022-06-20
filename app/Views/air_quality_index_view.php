@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Afifhrz App</title>
+	<title>Afifhrz App - Air Quality Index</title>
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="<?= base_url('css/bootstrap.min.css') ?>" />
@@ -35,7 +35,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h1 class="h1">Afifhrz App</h1>
+					<h1 class="h1">Afifhrz App - Air Quality Index</h1>
 				</div>
 			</div>
 		</div>
@@ -43,24 +43,26 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12 my-2 card">
-				<div class="card-body">
-					<h5 class="h5">What is Afifhrz App?</h5>
-					<p>This is a collection of applications that have been created by <a href="https://github.com/afifhrz">@afifhrz</a>. This application is made solely for practice and share with anyone who wants to use it. Any feedback will mean a lot to me going forward. Thanks</p>
+			<div class="col-md-12 card border-white">
+			<form>
+				<div class="form-row">
+					<div class="col">
+					<label for="location" class="col-form-label">Location</label>
+					</div>
+					<div class="col-8">
+					<input type="text" class="form-control" placeholder="Ex:Jakarta" id="location">
+					</div>
+					<div class="col">
+					<a href="#" class="btn btn-primary btn-block" onclick=f_action()>Get Air Quality Index</a>
+					</div>
 				</div>
+				</form>
 			</div>
-			<div class="col-md-12 my-2 card">
-				<div class="card-body">
-                    <div class="list-group">
-                        <h5 class="h5">
-                            <button type="button" class="list-group-item list-group-item-action active">
-                                App List
-                            </button>
-                        </h5>
-                        <button type="button" class="list-group-item list-group-item-action">
-                            <a href="<?=base_url()?>/Air_quality_index/">Air Quality Index</a>
-                        </button>
-                    </div>
+            <div class="col-md-12 my-2 card" id="show">
+				<div class="card-body text-center">
+					<h4 id="result_city"></h4>
+					<h5 id="result_pm" class="ml-3 mr-3"></h5>
+					<p id="result_advice" class="ml-3 mr-3" ></p>
 				</div>
 			</div>
 		</div>
@@ -73,6 +75,7 @@
 	<!-- Jquery dan Bootsrap JS -->
 	<script src="<?= base_url('js/jquery.min.js') ?>"></script>
 	<script src="<?= base_url('js/bootstrap.min.js') ?>"></script>
+    <script src="<?= base_url('js/currency_converter_script.js') ?>"></script>
 
 </body>
 
