@@ -12,7 +12,7 @@
 
 <body>
 
-	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
 		<div class="container">
 			<a class="navbar-brand" href="<?= base_url() ?>">Home</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,7 +35,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h1 class="h1">Afifhrz App</h1>
+					<h1 class="h1 text-center"><br>Afifhrz App</h1>
 				</div>
 			</div>
 		</div>
@@ -53,13 +53,15 @@
 				<div class="card-body">
                     <div class="list-group">
                         <h5 class="h5">
-                            <button type="button" class="list-group-item list-group-item-action active">
+                            <div class="list-group-item list-group-item-action active text-center">
                                 App List
-                            </button>
+							</div>
                         </h5>
-                        <button type="button" class="list-group-item list-group-item-action">
-                            <a href="<?=base_url()?>/Air_quality_index/">Air Quality Index</a>
+						<a href="<?=base_url()?>/Air_quality_index/">
+                        <button type="button" class="list-group-item list-group-item-action text-center">
+                            Air Quality Index
                         </button>
+						</a>
                     </div>
 				</div>
 			</div>
